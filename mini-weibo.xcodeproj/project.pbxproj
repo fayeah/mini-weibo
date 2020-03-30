@@ -7,16 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F455A112429DAA80018EC9C /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F455A102429DAA80018EC9C /* DynamicValue.swift */; };
+		9F455A132429DB0D0018EC9C /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F455A122429DB0D0018EC9C /* CurrencyViewModel.swift */; };
+		9F455A152429DB400018EC9C /* CurrencyDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F455A142429DB400018EC9C /* CurrencyDataSource.swift */; };
+		9F455A192429DEA50018EC9C /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F455A182429DEA50018EC9C /* CurrencyCell.swift */; };
+		9F455A1D2429FD6C0018EC9C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F455A1C2429FD6C0018EC9C /* Comment.swift */; };
+		9F455A20242A043B0018EC9C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F73FF7124289ED2006A56AA /* Alamofire.framework */; };
+		9F455A21242A043B0018EC9C /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F73FF7124289ED2006A56AA /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9F455A26242B13840018EC9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F455A25242B13840018EC9C /* SceneDelegate.swift */; };
 		9F73FF3C24287DBE006A56AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F73FF3B24287DBE006A56AA /* AppDelegate.swift */; };
-		9F73FF3E24287DBE006A56AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F73FF3D24287DBE006A56AA /* SceneDelegate.swift */; };
 		9F73FF4024287DBE006A56AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F73FF3F24287DBE006A56AA /* ViewController.swift */; };
 		9F73FF4324287DBE006A56AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F73FF4124287DBE006A56AA /* Main.storyboard */; };
 		9F73FF4524287DC0006A56AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F73FF4424287DC0006A56AA /* Assets.xcassets */; };
 		9F73FF4824287DC0006A56AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F73FF4624287DC0006A56AA /* LaunchScreen.storyboard */; };
 		9F73FF5324287DC0006A56AA /* mini_weiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F73FF5224287DC0006A56AA /* mini_weiboTests.swift */; };
 		9F73FF5E24287DC0006A56AA /* mini_weiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F73FF5D24287DC0006A56AA /* mini_weiboUITests.swift */; };
-		9F73FF7224289ED2006A56AA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F73FF7124289ED2006A56AA /* Alamofire.framework */; };
-		9F73FF7324289ED2006A56AA /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9F73FF7124289ED2006A56AA /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9FBC673424316F64006FB20B /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBC673324316F64006FB20B /* Quick.framework */; };
+		9FBC673524316F64006FB20B /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBC673324316F64006FB20B /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9FBC673724316F67006FB20B /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBC673624316F67006FB20B /* Nimble.framework */; };
+		9FBC673824316F67006FB20B /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBC673624316F67006FB20B /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9F73FF7424289ED2006A56AA /* Embed Frameworks */ = {
+		9F455A22242A043B0018EC9C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9F73FF7324289ED2006A56AA /* Alamofire.framework in Embed Frameworks */,
+				9FBC673824316F67006FB20B /* Nimble.framework in Embed Frameworks */,
+				9FBC673524316F64006FB20B /* Quick.framework in Embed Frameworks */,
+				9F455A21242A043B0018EC9C /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,9 +62,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9F455A102429DAA80018EC9C /* DynamicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicValue.swift; sourceTree = "<group>"; };
+		9F455A122429DB0D0018EC9C /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
+		9F455A142429DB400018EC9C /* CurrencyDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDataSource.swift; sourceTree = "<group>"; };
+		9F455A182429DEA50018EC9C /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
+		9F455A1C2429FD6C0018EC9C /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		9F455A25242B13840018EC9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9F73FF3824287DBE006A56AA /* mini-weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mini-weibo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F73FF3B24287DBE006A56AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F73FF3D24287DBE006A56AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9F73FF3F24287DBE006A56AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F73FF4224287DBE006A56AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F73FF4424287DC0006A56AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +82,8 @@
 		9F73FF5D24287DC0006A56AA /* mini_weiboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mini_weiboUITests.swift; sourceTree = "<group>"; };
 		9F73FF5F24287DC0006A56AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F73FF7124289ED2006A56AA /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		9FBC673324316F64006FB20B /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		9FBC673624316F67006FB20B /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +91,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F73FF7224289ED2006A56AA /* Alamofire.framework in Frameworks */,
+				9FBC673724316F67006FB20B /* Nimble.framework in Frameworks */,
+				9FBC673424316F64006FB20B /* Quick.framework in Frameworks */,
+				9F455A20242A043B0018EC9C /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +114,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F455A082429D6D80018EC9C /* request */ = {
+			isa = PBXGroup;
+			children = (
+				9F455A1C2429FD6C0018EC9C /* Comment.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		9F455A092429D6DF0018EC9C /*  view-model */ = {
+			isa = PBXGroup;
+			children = (
+				9F455A122429DB0D0018EC9C /* CurrencyViewModel.swift */,
+				9F455A142429DB400018EC9C /* CurrencyDataSource.swift */,
+			);
+			path = " view-model";
+			sourceTree = "<group>";
+		};
+		9F455A0A2429D6FC0018EC9C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				9F455A102429DAA80018EC9C /* DynamicValue.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		9F455A0B2429D7040018EC9C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9F455A182429DEA50018EC9C /* CurrencyCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		9F455A27242B164C0018EC9C /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				9F73FF3F24287DBE006A56AA /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 		9F73FF2F24287DBE006A56AA = {
 			isa = PBXGroup;
 			children = (
@@ -118,9 +179,13 @@
 		9F73FF3A24287DBE006A56AA /* mini-weibo */ = {
 			isa = PBXGroup;
 			children = (
+				9F455A27242B164C0018EC9C /* controller */,
+				9F455A25242B13840018EC9C /* SceneDelegate.swift */,
+				9F455A0B2429D7040018EC9C /* view */,
+				9F455A0A2429D6FC0018EC9C /* model */,
+				9F455A092429D6DF0018EC9C /*  view-model */,
+				9F455A082429D6D80018EC9C /* request */,
 				9F73FF3B24287DBE006A56AA /* AppDelegate.swift */,
-				9F73FF3D24287DBE006A56AA /* SceneDelegate.swift */,
-				9F73FF3F24287DBE006A56AA /* ViewController.swift */,
 				9F73FF4124287DBE006A56AA /* Main.storyboard */,
 				9F73FF4424287DC0006A56AA /* Assets.xcassets */,
 				9F73FF4624287DC0006A56AA /* LaunchScreen.storyboard */,
@@ -150,6 +215,8 @@
 		9F73FF7024289ED2006A56AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9FBC673624316F67006FB20B /* Nimble.framework */,
+				9FBC673324316F64006FB20B /* Quick.framework */,
 				9F73FF7124289ED2006A56AA /* Alamofire.framework */,
 			);
 			name = Frameworks;
@@ -165,8 +232,8 @@
 				9F73FF3424287DBE006A56AA /* Sources */,
 				9F73FF3524287DBE006A56AA /* Frameworks */,
 				9F73FF3624287DBE006A56AA /* Resources */,
-				9F73FF7424289ED2006A56AA /* Embed Frameworks */,
 				9F73FF7524289EF1006A56AA /* ShellScript */,
+				9F455A22242A043B0018EC9C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -293,6 +360,8 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -309,9 +378,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F455A132429DB0D0018EC9C /* CurrencyViewModel.swift in Sources */,
 				9F73FF4024287DBE006A56AA /* ViewController.swift in Sources */,
+				9F455A26242B13840018EC9C /* SceneDelegate.swift in Sources */,
+				9F455A152429DB400018EC9C /* CurrencyDataSource.swift in Sources */,
 				9F73FF3C24287DBE006A56AA /* AppDelegate.swift in Sources */,
-				9F73FF3E24287DBE006A56AA /* SceneDelegate.swift in Sources */,
+				9F455A192429DEA50018EC9C /* CurrencyCell.swift in Sources */,
+				9F455A112429DAA80018EC9C /* DynamicValue.swift in Sources */,
+				9F455A1D2429FD6C0018EC9C /* Comment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +602,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS/**";
 				INFOPLIST_FILE = "mini-weiboTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -549,6 +624,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS/**";
 				INFOPLIST_FILE = "mini-weiboTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -569,6 +645,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS/**";
 				INFOPLIST_FILE = "mini-weiboUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -588,6 +665,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS/**";
 				INFOPLIST_FILE = "mini-weiboUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
